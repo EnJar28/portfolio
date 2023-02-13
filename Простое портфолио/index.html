@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Портфолио</title>
+    <link rel="stylesheet" type="text/css" href="assets/index.css">
+</head>
+
+<body>
+    <div class="header" id="header">
+        <div class="header-wrapper">
+            <div class="header-group" >
+                <a href="#home" class="header-link" id = "link-home">Home</a> 
+                <img src="img/X.png" alt="" id = "link-img">
+            </div>
+            <a href="#about" class="header-link" id = 'link-about'>About me</a>
+            <a href="#skills" class="header-link" id = 'link-skills'>Skills</a>
+            <a href="#portfolio" class="header-link" id = 'link-portfolio'>Portfolio</a>
+            <a href="#contacts" class="header-link" id = 'link-contacts'>Contacts</a>
+            <a href="" class="header-language"><p class="home-language" id="header-language">RU <span> | ENG</span></p></a>
+        </div>
+    </div>
+    <div class="home" id="home">
+        <div class="home-text">
+            <div class="home-group">
+                <p class="home-name">Denis Novik</p>
+                <button href="" class="home-button"><img src="img/menu.png" alt="" class="menu-icon"></button>
+            </div>
+            <p class="home-about">UX | UI designer 24 years old, Minsk</p>
+            <p class="home-language">RU <span> | ENG</span></p>
+        </div>
+        <div class="home-img">
+            <img src="img/portrait.png" class="img-big">
+            <img src="img/portraitsmall.png" class="img-small">
+        </div>
+    </div>
+    <div class="about" id="about">
+        <div class="about-bg">
+            <p class="about-title title">About me</p>
+            <p class="about-text">Hi, I'm Denis – UX/UI designer from Minsk. <br>I'm interested in design and everything connected with it.<br><br><br> I'm studying at courses "Web and mobile design<br> interfaces" in IT-Academy.<br><br><br> Ready to implement excellent projects<br> with wonderful people.</p>
+        </div>
+    </div>
+    <div class="skills" id="skills">
+        <div class="skills-text">
+            <p class="title">Skills</p>
+            <p class="skills-text-text">I work in such programs as</p>
+        </div>
+        <div class="skills-icons">
+            <div class="skills-icons-items">
+                <img src="img/photoshop.png" alt="">
+                <p class="icons-text">Adobe <br>Photoshop</p>
+                <img src="img/4stars.png" class="icons-star">
+            </div>
+            <div class="skills-icons-items">
+                <img src="img/illustrator.png" alt="">
+                <p class="icons-text">Adobe <br>Illustrator</p>
+                <img src="img/3stars.png" class="icons-star">
+            </div>
+            <div class="skills-icons-items">
+                <img src="img/aftereffect.png" alt="">
+                <p class="icons-text">Adobe <br>After Effects</p>
+                <img src="img/4stars.png" class="icons-star">
+            </div>
+            <div class="skills-icons-items">
+                <img src="img/figma.png" alt="">
+                <p class="icons-text">Figma<br><br></p>
+                <img src="img/4stars.png" class="icons-star">
+            </div>
+        </div>
+    </div>
+    <div class="portfolio" id="portfolio">
+        <div class="portfolio-container">
+            <p class="title">Portfolio</p>
+            <div class="portfolio-items">
+                <img src="img/portfolio1.png" alt="">
+                <p class="description">Online fashion store - Homepage</p>
+            </div>
+            <div class="portfolio-items">
+                <img src="img/portfolio2.png" alt="">
+                <p class="description">Reebok Store - Concept</p>
+            </div>
+            <div class="portfolio-items">
+                <img src="img/portfolio3.png" alt="">
+                <p class="description">Braun Landing Page - Concept</p>
+            </div>
+        </div>
+    </div>
+    <div class="contacts" id="contacts">
+        <div class="contacts-container">
+            <p class="title">Contacts</p>
+            <p class="contacts-text">Want to know more or just chat? <br>You are welcome!</p>
+            <button class="contacts-button">Send message</button>
+            <div class="contacts-icons">
+                <a href=""><img src="img/linkedin.png" alt=""></a>
+                <a href=""><img src="img/insta.png" alt=""></a>
+                <a href=""><img src="img/behance.png" alt=""></a>
+                <a href=""><img src="img/dribble.png" alt=""></a>
+            </div>
+            <p class="contacts-smalltext">Like me on <br> LinkedIn, Instagram, Behance, Dribble</p>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $("a.header-link").click(function() {
+            $("html, body").animate({
+                scrollTop: $($(this).attr("href")).offset().top - 88 + "px"
+            }, {
+                duration: 1000,
+                easing: "swing"
+            });
+            return false;
+        });
+    });
+    </script>
+    <script src="assets/index.js"></script>
+</body>
+
+</html>
